@@ -95,6 +95,17 @@ cleaning, metric calculation, plotting, and exports. This makes the project
 easier to debug and explain
 
 
+the data flow:
+
+raw data → clean data → metrics → plots/tables → Shiny dashboard
+
+
+
+
+
+
+
+
 
 
 
