@@ -21,14 +21,15 @@ clean_insurance_data <- function(raw_data) {
       claim_amount = as.numeric(claim_amount),
       premium = as.numeric(premium)
     ) %>%
-    filter(
-      !is.na(report_date),
-      !is.na(line),
+    filter( # filter() keeps only ROWS where ALL conditions are true
+      !is.na(report_date), # removes rows with missing or impossible values
+      !is.na(line), # the ! means NOT, and the whole line is rows where 'line' is not missing
+                    # and since its in the filter() function, it means keep rows where line is not missing
       !is.na(region),
       claim_count >= 0,
       claim_amount >= 0,
       premium > 0
-    )
+    ) # these ^^ are all a set of conditions for the filter() function
   
   return(clean_data)
 }

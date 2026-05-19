@@ -42,3 +42,17 @@ raw data
 → export Excel report
 
 
+
+## Future feature
+
+Add an Excel download button so the user can export the filtered dashboard data.
+
+
+
+
+
+
+
+
+
+

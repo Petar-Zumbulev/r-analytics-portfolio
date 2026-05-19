@@ -48,3 +48,4 @@ generate_sample_insurance_data <- function() {
   
   return(sample_data)
 }
+

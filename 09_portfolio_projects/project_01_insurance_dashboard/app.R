@@ -3,7 +3,7 @@
 # Insurance Reporting Dashboard
 # ============================================================
 
-source("R/00_packages.R")
+source("09_portfolio_projects/project_01_insurance_dashboard/R/00_packages.R")
 source("R/01_generate_sample_data.R")
 source("R/02_clean_data.R")
 source("R/03_calculate_metrics.R")

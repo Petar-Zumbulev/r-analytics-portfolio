@@ -1,11 +1,9 @@
 
----
-  
   # 8. Starter R files
   
   ## `R/00_packages.R`
   
-  ```r
+#
 # ============================================================
 # 00_packages.R
 # Load packages for the insurance dashboard project
@@ -28,3 +26,4 @@ if (length(new_packages) > 0) {
 }
 
 lapply(packages, library, character.only = TRUE)
+

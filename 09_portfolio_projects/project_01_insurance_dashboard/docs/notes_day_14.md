@@ -43,3 +43,58 @@ raw data
 → show results in Shiny
 → export reports
 
+
+
+
+
+Important concept for today: data flow
+
+This is the main thing to understand.
+
+01_generate_sample_data.R
+        ↓
+02_clean_data.R
+        ↓
+03_calculate_metrics.R
+        ↓
+04_create_plots.R
+        ↓
+app.R
+
+
+
+
+
+
+
+Separating scripts keeps the project clean.
+
+Instead of putting everything into one huge app.R file, each script has one job.
+
+For example:
+
+one script loads packages
+one script creates data
+one script cleans data
+one script calculates KPIs
+one script creates plots
+one script exports outputs
+
+This makes the project easier to debug, explain, and extend.
+
+
+^^ This is how I should work in teams in the future
+
+this creates a clean data pipeline
+
+
+Why do we separate app.R from the scripts in the R/ folder?
+
+So that app.R stays clean. The R scripts handle data generation, 
+cleaning, metric calculation, plotting, and exports. This makes the project 
+easier to debug and explain
+
+
+
+
+
