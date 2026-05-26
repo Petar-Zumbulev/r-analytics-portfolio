@@ -3,6 +3,9 @@
 # Parse semi-structured report text into structured tables
 # ============================================================
 
+
+# parsing means organizing into dataframes
+# Parsing means taking text and extracting meaningful pieces from it into a structured format
 extract_single_value <- function(text, pattern, default = NA_character_) {
   
   value <- str_match(text, pattern)[, 2]
@@ -16,6 +19,7 @@ extract_single_value <- function(text, pattern, default = NA_character_) {
 
 parse_report_metadata <- function(clean_text) {
   
+  # tibble() makes a dataframe in R
   tibble(
     report_id = extract_single_value(clean_text, "Report ID:\\s*([^\\n]+)"),
     report_date = ymd(extract_single_value(clean_text, "Report Date:\\s*([^\\n]+)")),

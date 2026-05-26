@@ -5,6 +5,7 @@
 
 create_sample_report <- function(output_path) {
   
+  # dont need to define output_path seperately here, it will be defined in run_pipeline.R
   dir.create(dirname(output_path), recursive = TRUE, showWarnings = FALSE)
   
   report_lines <- c(
