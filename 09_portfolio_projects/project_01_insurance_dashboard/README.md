@@ -73,16 +73,13 @@ project_1_insurance_dashboard/
 │   ├── 04_create_plots.R
 │   └── 05_export_outputs.R
 │
-├── data_raw/
 ├── data_processed/
 ├── outputs/
 │   ├── figures/
 │   └── excel/
-├── docs/
-│   ├── project_plan.md
-│   └── data_dictionary.md
-└── www/
-
+└── docs/
+    ├── project_plan.md
+    └── data_dictionary.md
 
 
 Why this project is relevant
@@ -98,3 +95,62 @@ insurance interpretation
 
 It reflects practical analyst work rather than purely theoretical actuarial modeling.
 
+
+
+## R Packages Used
+
+- shiny
+- tidyverse
+- dplyr
+- ggplot2
+- lubridate
+- DT
+- scales
+- openxlsx
+
+## How to Run the App
+
+Open the project in RStudio and run:
+
+```r
+shiny::runApp("09_portfolio_projects/project_01_insurance_dashboard")
+```
+
+Alternatively, open `app.R` and click **Run App** in RStudio.
+
+## Workflow
+
+The app follows this workflow:
+
+```text
+Generate sample insurance data
+        ↓
+Clean and prepare data
+        ↓
+Calculate insurance KPIs
+        ↓
+Prepare app-ready dataset
+        ↓
+Display dashboard in Shiny
+        ↓
+Export structured report outputs
+```
+
+## What This Project Demonstrates
+
+This project demonstrates practical skills in:
+
+- R programming
+- tidyverse data wrangling
+- Shiny dashboard development
+- insurance KPI calculation
+- Excel reporting
+- modular project organization
+- business-oriented data visualization
+- GitHub-ready documentation
+
+## Interview Talking Point
+
+This dashboard was built to simulate the type of practical reporting work an 
+insurance analyst might do: turning claims and premium data into clean, 
+interactive, and exportable business insights.
