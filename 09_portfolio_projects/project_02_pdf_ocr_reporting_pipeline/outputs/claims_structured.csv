@@ -1,0 +1,7 @@
+claim_id,policy_id,claim_date,region,business_line,claim_amount,status,claim_month,claim_quarter,severity_band,review_priority
+CLM-1001,POL-501,2026-01-12,South,Health,2450.75,Closed,2026-01-01,2026 Q1,Low,Standard
+CLM-1002,POL-502,2026-01-18,West,Health,980,Open,2026-01-01,2026 Q1,Low,Monitor open claim
+CLM-1003,POL-503,2026-02-04,South,Accident,5300.4,Closed,2026-02-01,2026 Q1,Medium,Standard
+CLM-1004,POL-504,2026-02-21,North,Health,720.9,Open,2026-02-01,2026 Q1,Low,Monitor open claim
+CLM-1005,POL-505,2026-03-08,East,Accident,12800,Review,2026-03-01,2026 Q1,High,Manual review required
+CLM-1006,POL-506,2026-03-17,West,Health,3100.3,Closed,2026-03-01,2026 Q1,Medium,Standard

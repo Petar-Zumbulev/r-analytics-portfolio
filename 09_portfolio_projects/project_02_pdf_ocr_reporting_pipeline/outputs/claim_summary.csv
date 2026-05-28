@@ -1,0 +1,7 @@
+business_line,region,severity_band,claim_count,total_claim_amount,avg_severity,open_claims,review_claims,medical_inflation_pct,recommended_premium_adjustment_pct,inflation_adjusted_total
+Accident,East,High,1,12800,12800,0,1,4.5,6.2,13376
+Accident,South,Medium,1,5300.4,5300.4,0,0,4.5,6.2,5538.918
+Health,West,Medium,1,3100.3,3100.3,0,0,4.5,6.2,3239.8134999999997
+Health,South,Low,1,2450.75,2450.75,0,0,4.5,6.2,2561.0337499999996
+Health,West,Low,1,980,980,1,0,4.5,6.2,1024.1
+Health,North,Low,1,720.9,720.9,1,0,4.5,6.2,753.3404999999999

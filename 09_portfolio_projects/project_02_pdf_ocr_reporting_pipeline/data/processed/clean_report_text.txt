@@ -1,0 +1,18 @@
+INSURANCE CLAIM REPORT
+Report ID: RPT-2026-001
+Report Date: 2026-03-31
+Portfolio: Health Claims
+Quarter: 2026 Q1
+Currency: EUR
+Summary Notes:
+This report contains selected claim records for quarterly reporting.
+Medical inflation assumption: 4.5%
+Recommended premium adjustment: 6.2%
+Claim Records:
+Claim ID: CLM-1001 | Policy ID: POL-501 | Claim Date: 2026-01-12 | Region: South | Business Line: Health | Claim Amount: EUR 2450.75 | Status: Closed
+Claim ID: CLM-1002 | Policy ID: POL-502 | Claim Date: 2026-01-18 | Region: West | Business Line: Health | Claim Amount: EUR 980.00 | Status: Open
+Claim ID: CLM-1003 | Policy ID: POL-503 | Claim Date: 2026-02-04 | Region: South | Business Line: Accident | Claim Amount: EUR 5300.40 | Status: Closed
+Claim ID: CLM-1004 | Policy ID: POL-504 | Claim Date: 2026-02-21 | Region: North | Business Line: Health | Claim Amount: EUR 720.90 | Status: Open
+Claim ID: CLM-1005 | Policy ID: POL-505 | Claim Date: 2026-03-08 | Region: East | Business Line: Accident | Claim Amount: EUR 12800.00 | Status: Review
+Claim ID: CLM-1006 | Policy ID: POL-506 | Claim Date: 2026-03-17 | Region: West | Business Line: Health | Claim Amount: EUR 3100.30 | Status: Closed
+End of report.

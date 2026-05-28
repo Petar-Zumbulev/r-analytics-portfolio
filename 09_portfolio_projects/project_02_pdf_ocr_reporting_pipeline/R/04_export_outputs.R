@@ -3,6 +3,19 @@
 # Export structured reporting outputs
 # ============================================================
 
+#
+#
+# previous files:
+# messy report text
+# → cleaned text
+# → parsed claims table
+# → enriched claims table
+# → summary table
+#
+# after the summaries its a good idea to export the tables we have
+# dont want to just leave them as temporary tables in R
+# exporting allows us to be able to use them later
+# Creating an excel workbook now
 export_pipeline_outputs <- function(metadata_tbl, claims_tbl, summary_tbl, output_dir) {
   
   dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
@@ -17,6 +30,7 @@ export_pipeline_outputs <- function(metadata_tbl, claims_tbl, summary_tbl, outpu
   addWorksheet(workbook, "claims_structured")
   addWorksheet(workbook, "summary")
   
+  # taking the actual R files and writing them to seperate workbooks
   writeDataTable(workbook, "metadata", metadata_tbl)
   writeDataTable(workbook, "claims_structured", claims_tbl)
   writeDataTable(workbook, "summary", summary_tbl)
@@ -25,6 +39,8 @@ export_pipeline_outputs <- function(metadata_tbl, claims_tbl, summary_tbl, outpu
   setColWidths(workbook, "claims_structured", cols = 1:ncol(claims_tbl), widths = "auto")
   setColWidths(workbook, "summary", cols = 1:ncol(summary_tbl), widths = "auto")
   
+  # very important: freezing the first row
+  # when we scroll down, we want the column names to be visible
   freezePane(workbook, "claims_structured", firstRow = TRUE)
   freezePane(workbook, "summary", firstRow = TRUE)
   
