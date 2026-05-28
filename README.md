@@ -1,4 +1,4 @@
-# Insurance R Analytics Portfolio
+# R Analytics Portfolio
 
 This repository contains practical R projects focused on insurance analytics, reporting automation, Shiny dashboards, Excel-connected workflows, and structured data preparation.
 
@@ -88,7 +88,7 @@ Project folder:
 ## Repository Structure
 
 ```text
-genre-r-prep/
+r-analytics-portfolio/
 ├── 01_learning_notes/
 │   └── notes, summaries, and interview preparation material
 │
